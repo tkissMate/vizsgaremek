@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 20, 2022 at 09:09 PM
+-- Generation Time: Apr 20, 2022 at 09:35 PM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 7.3.27
 
@@ -78,16 +78,7 @@ CREATE TABLE `rendeles` (
 --
 
 INSERT INTO `rendeles` (`rendeles_id`, `vasarlo_id`, `rendeles_datum`, `osszeg`, `megjegyzes`) VALUES
-(4, 9, '2022-02-20 21:30:08', 7130, 'valami'),
-(5, 9, '2022-02-20 21:34:47', 11490, 'valami2'),
-(8, 11, '2022-02-26 14:07:57', 14750, 'Nem akarok ennyit fizetni'),
-(9, 9, '2022-03-14 19:33:09', 16630, 'test valami test valami test valami test valami test valami test valami test valami test valami test valami test valami test valami test valami test valami test valami '),
-(10, 9, '2022-03-27 17:47:21', 3270, ''),
-(11, 9, '2022-03-27 18:08:39', 7920, 'nem létező termék teszt'),
-(12, 16, '2022-03-29 19:50:50', 14160, ''),
-(13, 16, '2022-03-29 19:51:01', 2970, 'megjegyzés'),
-(14, 16, '2022-03-29 20:12:16', 3270, ''),
-(15, 9, '2022-04-20 20:02:11', 4160, 'asddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddsad\r\n\r\nddddddddddddddddddddddddddddddd\r\n               d');
+(16, 17, '2022-04-20 21:35:23', 4750, 'Megjegyzés');
 
 -- --------------------------------------------------------
 
@@ -107,32 +98,9 @@ CREATE TABLE `rendelt_termek` (
 --
 
 INSERT INTO `rendelt_termek` (`rendeles_id`, `termek_id`, `mennyiseg`, `osszeg`) VALUES
-(4, 2, 3, 1090),
-(4, 5, 1, 990),
-(4, 4, 2, 990),
-(4, 6, 1, 890),
-(5, 2, 7, 1090),
-(5, 5, 1, 990),
-(5, 4, 2, 990),
-(5, 6, 1, 890),
-(8, 6, 1, 890),
-(8, 4, 9, 990),
-(8, 5, 5, 990),
-(9, 3, 2, 990),
-(9, 2, 2, 1090),
-(9, 4, 9, 990),
-(9, 6, 4, 890),
-(10, 2, 3, 1090),
-(11, 4, 7, 990),
-(11, 5, 1, 990),
-(12, 2, 3, 1090),
-(12, 5, 4, 990),
-(12, 4, 3, 990),
-(12, 3, 4, 990),
-(13, 4, 3, 990),
-(14, 2, 3, 1090),
-(15, 2, 2, 1090),
-(15, 4, 2, 990);
+(16, 3, 1, 990),
+(16, 5, 2, 990),
+(16, 6, 2, 890);
 
 -- --------------------------------------------------------
 
@@ -194,13 +162,7 @@ CREATE TABLE `vasarlo` (
 --
 
 INSERT INTO `vasarlo` (`vasarlo_id`, `vnev`, `knev`, `email`, `phone`, `elfogadva`, `jelszo`, `irszam`, `varos`, `utca`, `hazszam`) VALUES
-(9, 'Nagy', 'Béla', 'test@email.com', '3670635333', '2022-02-13 21:03:32', '$2y$10$E3CkBf7zRMc1joTaGRvZ1.5WmlVtPWiuggm53JA3pP.gSN.gVi2a6', '4027', 'Debrecen', 'Füredi út', '17'),
-(11, 'Taksony', 'Balambér', 'pontez@pont.po', '123456789', '2022-02-26 14:07:13', '$2y$10$aUYisEhKaEkJASyzYxJu1ulg.fWgfwJkN9rImUvPDrpP6YJCNMI/S', '1134', 'Budapest', 'Nemtom', '15'),
-(12, 'test', 'test', 'asd@email.com', '99999999', '2022-03-27 17:27:11', '$2y$10$yUhIlEhYGnW7H6JRSewJZ.Seut/hf0c5d.fNask/xBJn.mQ1xmwHe', ' ', 'test', 'test', 'test'),
-(13, 'Ts', 'asd', 'pelda@email.hu', '1111', '2022-03-29 19:14:11', '$2y$10$497lZ08zKTHdMkGT/jLjpuNCP1d6PdslooX03gZ9uB4EauW./4OHS', 'test', 'test', 'test', 'test'),
-(14, 'test', 'test', 'asdasdasdasd@email.com', '+123456789012345', '2022-03-29 19:22:32', '$2y$10$hR98FM0cSQsjCQq1biBwpeJ28R0Yl0aAWgXgHUCIIzHrwQyemrEGC', 'test', 'test', 'test', 'test'),
-(15, 'test', 'test', 'ad11dd1@email.com', '+1234567', '2022-03-29 19:22:43', '$2y$10$X4POByx.2/S2dH/ffIZz0uxmfXuGEmDjYVyH3b3lJi7gVDMfpO0Oq', 'test', 'test', 'test', 'test'),
-(16, 'Kis', 'Aladár', 'kisaladar@email.com', '+123206353333', '2022-03-29 19:50:34', '$2y$10$mL.ggMbmTO9A4AitQTjgquqqDrqWzMZq003KUnc3ntUn9vVh/pcyq', '1234', 'Debrecen', 'Füredi út', '2');
+(17, 'Teszt', 'Elek', 'test@email.com', '+36701234567', '2022-04-20 21:33:40', '$2y$10$Aept8VRKCC9aZG04d49TweAuKLPH2Imo9w5wFnZdaUQ.KVYZcT2kS', '4031', 'Debrecen', 'Füredi út', '17');
 
 --
 -- Indexes for dumped tables
@@ -272,7 +234,7 @@ ALTER TABLE `dolgozo`
 -- AUTO_INCREMENT for table `rendeles`
 --
 ALTER TABLE `rendeles`
-  MODIFY `rendeles_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `rendeles_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `termek`
@@ -284,7 +246,7 @@ ALTER TABLE `termek`
 -- AUTO_INCREMENT for table `vasarlo`
 --
 ALTER TABLE `vasarlo`
-  MODIFY `vasarlo_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `vasarlo_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- Constraints for dumped tables
