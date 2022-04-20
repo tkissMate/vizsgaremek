@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background: linear-gradient(45deg, #008cff, #9900ff);
+    min-height: 100vh;
+    padding-bottom: 124px;
+    position: relative;
+}
+
+
+/* BUTTONS */
+
+button {
+    border-radius: 12px;
+    padding: 4px;
+    margin: 4px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.btn-green {
+    background-color: greenyellow;
+}
+
+.btn-green:hover {
+    background-color: rgb(119, 170, 42)
+}
+
+.btn-red {
+    background-color: rgb(199, 40, 40);
+}
+
+.btn-red:hover {
+    background-color: rgb(150, 31, 31);
+}
+
+.btn-blue {
+    background-color: #00a2ff;
+}
+
+.btn-blue:hover {
+    background-color: #008cff;
+}
+
+.btn-yellow {
+    background-color: #DEB841;
+}
+
+.btn-yellow:hover {
+    background-color: #DE9E36;
+}
+
+.cart-btn {
+    width: 40px;
+    height: 40px;
+}
+
+.cart-btn img {
+    width: 100%;
+}
+
+
+/* HEADER.php */
+
+header {
+    background-color: #6c757d;
+    width: 100%;
+}
+
+h1 {
+    background-color: #343a40;
+    text-align: center;
+    height: 85px;
+}
+
+.nav-bar {
+    color: white;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-bar-fixed {
+    position: fixed;
+    top: 0;
+    z-index: 950;
+    background-color: #6c757d;
+}
+
+.nav-placeholder {
+    display: none;
+    height: 80px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline-flex;
+    width: 100px;
+    padding-left: 70px;
+    margin-right: 30px;
+}
+
+.dropdown-content {
+    display: block;
+    opacity: 0;
+    transition-duration: 0.2s;
+    background-color: #999999;
+    width: 75px;
+    padding: 5px;
+    line-height: 20px;
+    text-align: right;
+    position: fixed;
+    border-radius: 8px;
+}
+
+.dropdown-content a {
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #6D6A75;
+    transition-duration: 0.4s;
+}
+
+.dropdown:hover .dropdown-content {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/*  LOGIN BAR  */
+
+.login-bar {
+    display: inline-flex;
+    height: 80px;
+    width: 450px;
+    padding-top: 5px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: -5px;
+    z-index: 1000;
+    right: 15px;
+}
+
+.login-form {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input {
+    border: 2px solid grey;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+}
+
+input:hover {
+    border: 2px solid rgb(80, 80, 80);
+    border-radius: 4px;
+}
+
+input:focus {
+    border: 2px solid #008cff;
+    outline: 2px solid #008cff;
+}
+
+
+/* PRODUCTS.php */
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+}
+
+.menu-container {
+    padding: 1%;
+}
+
+.menu {
+    width: 40%;
+    margin-left: 5%;
+    padding: 5%;
+    border: 2px solid #6D6A75;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+}
+
+.content {
+    padding-top: 1%;
+}
+
+.table-container {
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    border: 2px solid #6D6A75;
+    width: 80%;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f8f9fa;
+}
+
+tr {
+    transition-duration: 0.4s;
+}
+
+tr:hover {
+    background-color: #17a2b8;
+}
+
+td:nth-child(1) {
+    text-align: left;
+}
+
+td {
+    text-align: center;
+}
+
+th {
+    text-transform: capitalize;
+}
+
+
+/* products menu*/
+
+.menu ul {
+    margin-left: 5%;
+}
+
+.menu ul li {
+    list-style-type: none;
+}
+
+#product {
+    margin: 1% auto;
+    border-collapse: separate;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    width: 80%;
+    padding: 20px;
+}
+
+
+/* account.php */
+
+.content form {
+    width: 30%;
+    background-color: #f8f9fa;
+    border: 2px solid #6D6A75;
+    border-radius: 8px;
+    padding: 1% 1% 1% 1%;
+    margin-top: 1%;
+}
+
+.content form div {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+footer {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px;
+    background-color: #292929;
+    position: absolute;
+    bottom: 0;
+}
+
+footer * {
+    display: inline;
+}

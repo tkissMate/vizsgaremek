@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="regStyle.css">
+    <title>Vizsgaremek</title>
+</head>
+
+<body>
+    <div class="container my-5">
+        <form method="POST" action="../includes/register.php">
+            <div class="navbar bg-dark text-light justify-content-between rounded-top">
+                <a class="btn btn-warning" href="../index.php">vissza</a>
+                <span>Regisztrációs Űrlap</span>
+                <button style="opacity: 0;" disabled>Vissza</button>
+            </div>
+            <div class="bg-light border-dark rounded-bottom p-2">
+
+                <div class="row m-4">
+                    <div class="col-4">Név</div>
+                    <div class="col-4">
+                        <input type="text" class="form-control" id="vnev" name="vnev" required>
+                        <small id="vnev_help" class="form-text text-muted">Vezetéknév</small>
+                    </div>
+                    <div class="col-4">
+                        <input type="text" class="form-control" id="knev" name="knev" required>
+                        <small id="lnev_help" class="form-text text-muted">Keresztnév</small>
+                    </div>
+                </div>
+
+                <div class="row m-4">
+                    <div class="col-4"><label for="email">E-mail</label></div>
+                    <div class="col-8">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="email@email.com" required>
+                    </div>
+                </div>
+
+                <div class="row m-4">
+                    <div class="col-4"><label for="pwd">Jelszo</label></div>
+                    <div class="col-8">
+                        <input type="password" class="form-control" id="pwd" name="pwd" placeholder="password" required>
+                    </div>
+                </div>
+                <div class="row m-4">
+                    <div class="col-4"><label for="pwdRep">Jelszo ismét</label></div>
+                    <div class="col-8">
+                        <input type="password" class="form-control" id="pwdRep" name="pwdRep" placeholder="password" required>
+                    </div>
+                </div>
+
+                <div class="row m-4 ">
+                    <div class="col-4"><label for="phone">Telefon</label></div>
+                    <div class="col-8">
+                        <input type="text" class="form-control" id="phone" name="phone" required>
+                    </div>
+                </div>
+
+
+                <div class="row m-4">
+                    <div class="col-4">Szállitási cím</div>
+                    <div class="col-8">
+                    </div>
+                </div>
+                <div class="row m-4 ">
+                    <div class="col-1"></div>
+                    <div class="col-2"><label for="irszam">Irányítószám</label></div>
+                    <div class="col-6">
+                        <input type="text" class="form-control" id="irszam" name="irszam" required>
+                    </div>
+                </div>
+                <div class="row m-4 ">
+                    <div class="col-1"></div>
+                    <div class="col-2"><label for="varos">Város</label></div>
+                    <div class="col-6">
+                        <input type="text" class="form-control" id="varos" name="varos" required>
+                    </div>
+                </div>
+                <div class="row m-4 ">
+                    <div class="col-1"></div>
+                    <div class="col-1"><label for="utca">Utca</label></div>
+                    <div class="col-3">
+                        <input type="text" class="form-control" id="utca" name="utca" required>
+                    </div>
+                    <div class="col-1"><label for="hazszam">Házszám</label></div>
+                    <div class="col-3">
+                        <input type="text" class="form-control" id="hazszam" name="hazszam" required>
+                    </div>
+                </div>
+
+                <div class="row m-4">
+                    <div class="col-4">Elfogadja a felhasználálasi feltételeket?</div>
+                </div>
+                <div class="row m-4">
+                    <div class="col-4 d-flex justify-content-between">
+                        <p>
+                            <input type="radio" name="accepted" id="accpet" value="true" required>Igen
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row m-4">
+                    <div class="col-6">
+                        <button type="submit" name="submit-reg" class="btn btn-danger">Regisztráció</button>
+                    </div>
+                </div>
+
+            </div>
+        </form>
+    </div>
+    <script src="regMain.js"></script>
+</body>
+
+</html>
