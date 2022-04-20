@@ -19,7 +19,7 @@
                     echo '<td>E-Mail: '.$_SESSION["email"].'</td>';
                 echo '</tr>';
                 echo '<tr>';
-                    echo '<td>Telefon: +'.$_SESSION["phone"].'</td>';
+                    echo '<td>Telefon: '.$_SESSION["phone"].'</td>';
                 echo '</tr>';
                 echo '<tr>';
                     echo '<td>Szállítási cím: '.$_SESSION["szallCim"].'</td>';
